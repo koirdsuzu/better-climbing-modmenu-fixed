@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "better_climbing_modmenu",
+  "version": "${version}",
+  "name": "Better Climbing (Modmenu)",
+  "description": "Better Climbing with per-feature Mod Menu toggles for Minecraft 1.21.",
+  "authors": ["koirdsuzu"],
+  "license": "CC0-1.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "artemis.better_climbing.BetterClimbingMod"
+    ],
+    "modmenu": [
+      "artemis.better_climbing.client.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "better_climbing_modmenu.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21",
+    "java": ">=21"
+  },
+  "suggests": {
+    "modmenu": ">=11.0.0"
+  }
+}
